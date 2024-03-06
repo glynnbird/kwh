@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+    <title>kWh - Convert KWh/km to miles/kWh</title>
+  </head>
+  <body>
+    <div id="app">
+        <label for="input">Input (kWh/km)</label>
+        <input id="input" v-model="input" />
+        <div style="height:50px"></div>
+        <h2>{{ input }} kWh/km == {{ output }} miles/kWh </h2> 
+    </div>
+    <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html> 
