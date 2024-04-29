@@ -3,7 +3,7 @@
 var app = new Vue({
   el: '#app',
   data: {
-    input: '100',
+    input: '18',
     error: ''
   },
   methods: {
@@ -19,7 +19,7 @@ var app = new Vue({
       }
 
       // convert kWh/km to miles/kWh
-      const reciprocal = 1 / (f/1000) // km/kWh
+      const reciprocal = 1 / (f/100) // km/kWh
       const miles = reciprocal * 0.621371
       const out = miles.toFixed(1)
       return out
